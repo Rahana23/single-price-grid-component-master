@@ -1,0 +1,124 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --dark-cyan: hsl(179, 47%, 52%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  section {
+    padding: 35px;
+    text-align: center;
+  }
+  
+  .section-1 {
+    background-color: var(--cyan);
+    color: white;
+  }
+  
+  .section-2 {
+    background-color: var(--dark-cyan);
+    color: white;
+  }
+  
+  .card {
+    display: flex;
+  }
+  
+  .card > section {
+    flex: 1;
+  }
+  
+  h1 {
+    color: var(--cyan);
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  
+  .yellow-text {
+    color: var(--bright-yellow);
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  p.black-text {
+    color: var(--grayish-blue);
+    line-height: 1.6;
+  }
+  
+  p.desc {
+    color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p.desc span {
+    font-size: 50px;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--dark-cyan);
+  }
+  
+  ul {
+    list-style-type: none;
+    opacity: 0.7;
+    padding: 0;
+  }
+  
+  ul li {
+    line-height: 28px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+  
